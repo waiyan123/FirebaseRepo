@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "471680972014",
+    "firebase_url": "https://padcfirebaseassignment-99754.firebaseio.com",
+    "project_id": "padcfirebaseassignment-99754",
+    "storage_bucket": "padcfirebaseassignment-99754.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471680972014:android:08de06236e5185669eefff",
+        "android_client_info": {
+          "package_name": "com.padc.padcfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471680972014-mb725vsjojd1483brtkof3pisqamf4jl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1MbpsoR2OtXiI7yfi-LJzs7H8OokNgIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471680972014-mb725vsjojd1483brtkof3pisqamf4jl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
