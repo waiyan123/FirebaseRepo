@@ -12,19 +12,19 @@ import java.util.*
 
 class ArticlesPresenter: BaseGoogleSignInPresenter<ArticlesView>(), ArticleItemDelegate {
 
-    private val model : FirebaseModel = FirebaseModelImpl
-//    private val firestoreModel : FirestoreModel = FirestoreModelImpl
+//    private val model : FirebaseModel = FirebaseModelImpl
+    private val firestoreModel : FirestoreModel = FirestoreModelImpl
     private val userModel : UserAuthenticationModel = UserAuthenticationModelImpl
     private val clearedLiveData = MutableLiveData<Unit>()
 
     fun onUIReady(owner: LifecycleOwner){
-        model.getAllArticles(clearedLiveData).observe(owner, Observer {
-            mView.showArticles(it)
-        })
-
-//        firestoreModel.getAllArticles(clearedLiveData).observe(owner, Observer {
+//        model.getAllArticles(clearedLiveData).observe(owner, Observer {
 //            mView.showArticles(it)
 //        })
+
+        firestoreModel.getAllArticles(clearedLiveData).observe(owner, Observer {
+            mView.showArticles(it)
+        })
     }
 
     override fun onArticleItemClicked(data: ArticleVO) {
