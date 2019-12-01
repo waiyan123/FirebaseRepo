@@ -54,7 +54,7 @@ object FirebaseModelImpl: FirebaseModel {
                 for(article in articles){
                     val id = article.id
 
-                    firestore.collection("testicles")
+                    firestore.collection("articles")
                         .document(id)
                         .set(article)
                         .addOnSuccessListener {

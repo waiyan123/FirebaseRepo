@@ -14,7 +14,7 @@ object FirestoreModelImpl : FirestoreModel{
     override fun getAllArticles(cleared: LiveData<Unit>): LiveData<List<ArticleVO>> {
         var liveData = MutableLiveData<List<ArticleVO>>()
 
-        firestoreRef.collection("testicles")
+        firestoreRef.collection("articles")
             .get()
             .addOnSuccessListener {
                 val articles = ArrayList<ArticleVO>()
@@ -22,9 +22,11 @@ object FirestoreModelImpl : FirestoreModel{
                     val article = articleData.toObject(ArticleVO::class.java)
                     article?.let{
                         articles.add(article)
+                        Log.d("test---","size "+articles.size)
 
                     }
                 }
+                liveData.value = articles
             }
             .addOnFailureListener{
                 Log.d("test---",it.message)

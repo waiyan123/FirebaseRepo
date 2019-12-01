@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "471680972014-tb290cilh69ddoofe53oss1clsnd4gvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.padc.padcfirebase",
+            "certificate_hash": "fc2a48898101f2225763d1eb8d26f5e4723d92af"
+          }
+        },
+        {
           "client_id": "471680972014-mb725vsjojd1483brtkof3pisqamf4jl.apps.googleusercontent.com",
           "client_type": 3
         }
