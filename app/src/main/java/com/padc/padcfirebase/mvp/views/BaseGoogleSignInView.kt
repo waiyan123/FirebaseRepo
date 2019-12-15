@@ -8,4 +8,5 @@ interface BaseGoogleSignInView: BaseView {
     fun navigateToGoogleSignInScreen(signInIntent: Intent, rcGoogleSign: Int)
     fun showGoogleLoginError(message: String)
     fun showGoogleLoginSuccess(user: FirebaseUser)
+
 }
